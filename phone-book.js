@@ -34,17 +34,23 @@ class PhoneBook {
 const simplePhoneBook = new PhoneBook();
 simplePhoneBook.addContact({
   name: 'Emmanuel',
-  phoneNumber: '123456',
+  phoneNumber: '07030000001',
   email: 'emmanuel@email.com'
 })
 
 simplePhoneBook.addContact({
   name: 'Fred',
-  phoneNumber: '1234',
+  phoneNumber: '07030000002',
   email: 'fred@email.com'
 })
 
-simplePhoneBook.removeContact('1234')
+simplePhoneBook.addContact({
+  name: 'Tim',
+  phoneNumber: '07030000003',
+  email: 'fred@email.com'
+})
+
+simplePhoneBook.removeContact('07030000002')
 
 console.log('Get all contacts ', simplePhoneBook.getAllContacts())
 console.log('Get a contact ', simplePhoneBook.getContact('1234'))
